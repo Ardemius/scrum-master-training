@@ -1,0 +1,797 @@
+= Scrum Master training (préparation certification PSM I) - 2020/06/30
+Thomas SCHWENDER <https://github.com/ardemius[@ardemius]>
+// Handling GitHub admonition blocks icons
+ifndef::env-github[:icons: font]
+ifdef::env-github[]
+:status:
+:outfilesuffix: .adoc
+:caution-caption: :fire:
+:important-caption: :exclamation:
+:note-caption: :paperclip:
+:tip-caption: :bulb:
+:warning-caption: :warning:
+endif::[]
+:imagesdir: images
+:source-highlighter: highlightjs
+// Next 2 ones are to handle line breaks in some particular elements (list, footnotes, etc.)
+:lb: pass:[<br> +]
+:sb: pass:[<br>]
+// check https://github.com/Ardemius/personal-wiki/wiki/AsciiDoctor-tips for tips on table of content in GitHub
+:toc: macro
+:toclevels: 1
+// To turn off figure caption labels and numbers
+//:figure-caption!:
+// Same for examples
+//:example-caption!:
+// To turn off ALL captions
+:caption:
+
+toc::[]
+
+Formateur : Timothée NOVION (timothee.novion@gmail.com)
+
+== Notes
+
+* Timothée préfère Scrum.org à Scrum Alliance (trop terre à terre)
+
+* RX : avoir 1h par semaine où un dev (tournant) présenter sa veille dans l'intérêt du projet (que faire pour améliorer la qualité)
+* Timothée : la Ready est interdite dans SCRUM, mais Timothée la trouve essentielle
+
+* loi de Moore / Buter / Neilsen
+    ** Buter : on double la capacité de stockage tous les 15 mois
+    ** Neilsen : la vitesse de connexion double tous les 2 ans
+
+* *L'Agile est une philosophie* plus qu'une méthodologie
+
+* 21 / 258 : Feature Driven Development et l'introduction du pilotage par la valeur
+* 23 / 258 : eXtreme Programming -> valeurs : courage et *respect* (on ne casse jamais la compilation des autres)
+* 24 / 258 : LEAN Startup - apporter au plus vite de la valeur ajoutée. A été créé dans un cadre de création d'entreprise / startup
+    ** les 9 cases du Lean Canvas : pour bien définir l'idée de base qu'on va créer
+* 26 / 258 : Kanban et son Kanban Desk
+* 29 / 258 : 73% des projets sont en SCRUM actuellement
+
+IMPORTANT: *valeurs de SCRUM* : Commitment, Courage, Focus, Openness, Respect
+
+* 32 / 258 : SCRUM n'est pas une méthodologie, philosophie, principe ou technique, c'est un *FRAMEWORK*
+
+* SCRUM est simple à comprendre, mais difficile à maîtriser
+
+* 34 / 258 : différences entre incrémental et itératif
+    ** voir ce site sur la Mona Lisa Agile de Jeff Patton : http://romy.tetue.net/mona-lisa-agile
+        *** *Incrémental* : typique de l’approche waterfall (ou cycle en V), s’appuie sur une idée initiale complètement formée, que l’on *construit ensuite morceau par morceau*, jusqu’à une livraison finale, complète. L’inconvénient est qu’il faut attendre longtemps avant de voir le résultat final.
+        *** *Itératif* : Le développement itératif, introduit par les méthodes agiles, part d’une idée grossière, qui est *affinée par retouches successives*, chacune améliorant la qualité. Dès le début, l’effort porte sur l’ensemble, au risque de ne jamais complètement finir.
+    ** SCRUM est les 2, *itératif ET incrémental*
+
+* 48 / 258 : serious games "survie - perdus dans le désert" : l'important est de *partager une vision*
+
+[IMPORTANT]
+====
+SCRUM est une pratique *empirique*, reposant sur *3 valeurs* :
+
+    * *transparence*
+        *** partage sans faille de l'information autour du projet
+        *** les variables les plus importantes du processus sont à disposition de tous les acteurs : avancement, ressources, risques, planning, coût
+    * *inspection*
+    * *adaptation*
+====
+
+* 59 / 258 : Connaître par coeurs les différentes *durée des cérémonies*
+    ** *Sprint* : Une itération peut durer entre 2 et 4 semaines
+    ** *Spring Planning* : La planification d’itération dure 8 heures pour une itération de 4 semaines
+    ** *Daily Scrum* : La mêlée dure 15 min DANS TOUS LES CAS (quelle que soit la taille de l'équipe, ou la durée du Sprint)
+    ** *Sprint Review* : La démo dure 4 heures pour une itération d’un mois
+    ** *Sprint Retro* : La rétrospective dure 3 heures pour une itération d’un mois
+
+* 71 / 258 : *Development Team* OU, autre terme possible, la *Development Organisation*
+
+.tâches / responsabilités des différents rôles
+image::scrum-roles-responsibilties.png[]
+
+* *SCRUM MASTER*
+    ** responsabilité méthodologique (SEULEMENT), *il n'ordonne RIEN*, il coach
+    ** organisateur : organisation des différents évènements, tenue des évènements
+    ** *facilitateur*
+    ** le Scrum Master est un coach
+    ** il n'exploite pas les compétences, il motive les individus
+    ** il ne dirige pas, il guide
+        *** ce n'est pas un "N+1"
+    ** il ne cherche pas qui a fait la faute, il accompagne jusqu'à la solution
+        *** approche PROTECTRICE de l'équipe
+    ** Le Scrum Master guide l'équipe MAIS n'apporte PAS de solutions. Le scrum master n'a pas à interférer avec les choix de l'équipe (il peut même laisser l'équipe se "planter")
+    ** *le Scrum Master n'est pas obligatoire au Daily Scrum*, mais peut-être un participant ("PARTICIPATE") SI demandé par l'équipe de dev
+
+* Scrum.org *n'impose PAS un management visuel* (ce n'est pas obligatoire)
+    ** mais Scrum.org par de la burndown chart ET du burnup chart
+        *** burndown : pour le RAF du Sprint
+
+* Jeu du "Moving Motivator" : savoir ce à quoi s'identifie la personne / ce qui lui plaît, quels sont ses *motivateurs intrinsèques*
+    ** Acceptation, Curiosité, Liberté, But, Honneur, Maîtrise, Structure, Puissance, Relation, Statut
+    ** jeu à faire avec une extrême bienveillance
+
+* Matrice de compétences : bien différencier ce que les gens SAVENT faire et ce qu'ils AIMENT faire (ou n'aiment PAS faire)
+    ** voir la "fiche de perso D&D" que Timothée va m'envoyer
+
+* 74 / 258 : GPEC, Gestion Prévisionnelle des Emplois et des Compétences (vient du monde RH)
+
+* les responsabilités sont PARTAGEES au sein de l'*équipe de dev*, une personne n'a PAS de responsabiité propre, il n'y a qu'une *responsabilité collective*.
+    ** la responsabilité d'un item est toujours collective, *un dev n'est jamais "owner" d'un item*
+
+* le *PRODUCT OWNER* manage le Product Backlog, PAS une équipe
+    ** sole responsible for managing the Product Backlog
+        *** doit pouvoir expliquer les items du Product Backlog
+        *** responsible for the items and the order in which they are developed
+    ** responsabilité produit (et NON méthodologique comme le Scrum Master)
+    ** responsabilité : Optimizing the value of the work the Development Team does
+    ** est responsable du triangle "Coûts / Qualité / Délais"
+    ** 3 rôles principaux
+        *** responsable du produit : va rédiger le Product Backlog
+        *** validateur : seul responsable du Product Backlog (ce lui qui tranche sur l'item, la valeur que ce dernier apporte)
+        *** traducteur du besoin : doit être accessible et compréhensible par tous. L'ensemble des fonctionnalités doit être présenter de façon claire.
+            *** va faire le "shadowing" du métier (être toujours avec le métier pour suivre, s'approprier leur quotidien)
+    ** compétences du PO :
+        *** rigueur : maintenir les items du backlog
+        *** capacité d'immersion
+        *** écoute et ouverture
+        *** esprit de synthèse : plaque tournante de l'information sur le produit, doit pouvoir présenter les choses CLAIREMENT à tous
+        *** au sein de l'équipe le PO est un GARANT
+        *** C'est obligatoirement UNE SEULE personne physique
+        *** Maillon central du SCRUM, car entre les parties prenantes et les réalisateurs
+    ** *Il n'y a qu'un seul PO pour un même produit*, même si plusieurs équipes travaillent desssus   
+        ** *car il n'y aurait qu'un seul Product Backlog*, et le PO est la seule entrée sur ce dernier
+    ** le Product Owner ne peut *CANCEL* le sprint QUE ET UNIQUEMENT quand *le sprint Goal devient obsolète*
+
+* *Product Backlog*
+    ** il est UNIQUE
+    ** il vit avec le projet : évolue tout au long du projet (il n'est donc jamais "complet")
+
+* Scrum.org : le Product Backlog est découpé en Items, et dans le Spring Backlog, les Items sélectionnés vont être découpés en Tasks.
+    ** pas de notion de "temps" dans scrum.org, ni jour / homme, ni Story Points
+
+* *La User Story (forme d'Item)* : vient de l'XP, AUTORISE par Scrum.org (mais les Items, eux, sont MANDATORY)
+    ** n'est PAS obligatoire dans scrum.org
+    ** pour scrum.org, *il n'y a PAS de owner d'une User Story* (c'est une responsabilité collective)
+    ** "En tant que ... je peux ... afin de ..." (vient de la story)
+    ** critère *INVEST* (très utile pour la définition du Ready)
+        ** Independent
+        ** Negotiable : doit être négociée entre les parties prenantes et l'équipe de dev (comment doit être formalisé le besoin ?)
+        ** Valuable
+        ** Estimable
+        ** Small : doit pouvoir être traitée durant 1 sprint
+        ** Testable
+    ** le *niveau de détail d'un Item* : *"SUFFISAMMENT" de détails* (suffisamment "PEU" pour laisser de la créativité aux dev)
+
+* 112 / 258 : le *Story Mapping* (AUTORISE par Scrum.org)
+    ** identifier les utilisateurs : personnes mais aussi automates (= autres systèmes)
+    ** identifier les grandes fonctions dont ils ont besoin (Epics)
+    ** identifier les users stories pour chaque fonction
+    ** trier les User Stories pour identifier des releases
+    ** estimer les user stories par l'équipe de dev
+    ** release 1 : le MVP
+    ** release 2 : what we should do
+    ** release 3 : le "nice to have"
+
+* Exercice : Réveil
+    ** Release 1 MVP
+        *** US1 : Comme un utilisateur du réveil, je souhaite pouvoir régler l'heure
+        *** US2 : comme un utilisateur du réveil, je souhaite pouvoir régler l'heure de l'alarme
+    ** Release 2
+        *** ajout du projecteur au plafond
+    ** Release 3
+        *** ajout de la radio
+
+* Matrice de priorité : Priorité = Urgence x Valeur Métier (noté de 1 à 5 chacune)
+
+* RX Timothée : ne pas avoir plus de 40 à 70 items actifs dans le product backlog. +
+Attention ! On parle bien d'items ACTIFS ("Ready")
+
+* 120 / 258 - *PPO* (Proxy Product Owner) : FORBIDDEN par Scrum.org
+    ** bras droit du PO quand ce dernier ne peut pas gérer toutes ses tâches par manque de dispo
+    ** le PPO prend alors la place du PO dans la Scrum Team, et ce dernier ne fait dés lors PLUS PARTIE de la Scrum Team
+    ** interdit par Scrum.org, car scrum.org indique qu'il ne peut y avoir qu'un seul point d'entrée dans la Scrum Team pour le besoin du produit (qui est le PO)
+
+* Questions d'exam :
+    ** On average, items on the Product backlog tend to be larger than the ones on the Sprint Backlog
+
+* *L'ÉQUIPE DE DÉVELOPPEMENT*
+    ** auto-organisation : dans SCRUM ET préconisé par le manifeste Agile
+    ** QUE des développeurs dans l'équipe : donc pas d'architecte, de tech lead, de testeurs, etc.
+    ** mission : transformer les besoins transmis par le PO en nouvelles fonctionnalités dans l'application. L'objectif sera toujours dfe maximiser la valeur.
+        *** responsable de l'incrément
+        *** chargée de l'estimation
+        *** réalisateurs
+    ** l'équipe doit être protégée (par le SM) des aléas extérieurs
+    ** doit refuser les devs trop lours ou mal définis
+    ** 3 à 9 *développeurs*, équipe pluridisciplinaire
+
+* *l'incrément* (increment)
+    ** tous les items qui ont été "done" en fin d'un sprint
+    ** plus tous les incréments des sprints précédents, cad tout ce qui a déjà été terminé depuis le début du projet ?????? A CHECKER -> C'est confirmé, c'est bien la définition de Scrum
+    ** The Increment is the sum of all the Product Backlog items completed during a Sprint and the value of the increments of all previous Sprints.
+
+* *Definition of Done (DoD)*
+    ** uniquement définie par l'équipe de developpement (ou elle est héritée de la boîte elle-même)
+    ** checklist de tout ce qu'il faut faire pour considérer la fonctionnalité / User Story comme terminée (requirements)
+    ** peut être liée à : sécurité, qualité, tests, etc.
+    ** peut évoluer d'un Sprint à l'autre
+    ** devrait contenir une doc détaillée, tout particulièrement en fin de projet
+
+* *Dette technique* : concept ayant pour but de sensibiliser les développeurs et les décideurs à l'impact d'un code mal réalisé.
+
+* *Planning Poker*
+    ** trouver la *capacité de l'équipe* : pas forcément en jour / homme, mais en définissant une *valeur étalon*, comme la plus petite tâche à réaliser par exemple
+
+* *Vélocité* : 
+    ** la vélocité n'est pas un outil de management pour optimiser la capacité de l'équipe
+    ** l'augmentation de la vélocité n'est pas toujours une bonne nouvelle
+    ** JUSTE un outil de planification et RIEN D'AUTRE
+    ** permet de garder l'implication des développeurs
+
+* *Sprint Backlog*
+    ** le items peuvent changer (découpe en tasks) durant le sprint backlog
+    ** The Product Backlog items selected for this Sprint plus the plan for delivering them is called the Sprint Backlog.
+
+* *Sprint Goal*
+    ** c'est un but fixé pour le Sprint
+    ** le PO l'utilise pour communiquer avec les stakeholders
+    ** définit par le PO durant le Sprint Planning, avec l'aide de l'équipe de développement
+
+* 192 / 258 : *Les parties prenantes* (stakeholders)
+    ** toutes les personnes qui ont vu sur le projet, sans réellement s'investir dans la réalisation : MOA, architecte, autres équipes ayant attrait au produit, etc.
+    ** l'interlocuteur des parties prenantes est le PO
+        *** les autres membres de la Scrum Team (surtout l'équipe de dev) ne voient généralement les parties prenantes QUE lors de la review
+    ** les parties prenantes, dans le cas de presta, ont les sous ! 
+    ** leurs devoirs : faire confiance à l'équipe et à son mode de fonctionnement
+
+* *Le Coach Agile*
+    ** pas prévu par Scrum.org
+    ** vu plus globale que le Scrum Master
+    ** le coach Agile va pouvoir travailler dans plusieurs équipes
+    ** va discuter avec les parties prenantes, la direction, etc.
+    ** va former l'équipe
+    ** intervient tout particulièrement dans les phases de transition Agile, dans les phases de montée en compétence
+
+=== Les cérémonies (Scrum Events)
+
+* *Sprint*
+    ** un découpage "temporisé" du projet
+    ** *pas de temps mort entre les sprints* (obligatoire pour Scrum.org)
+        *** donc qu'y a-t-il entre un Sprint Retro et un Sprint Planning ? -> RIEN !
+        *** le mieux serait de ne pas faire review et retro dans la même journée le dernier vendredi, et commencer le Sprint planning le lundi qui suit +
+        RX Timothée : mardi soir la review, mercredi matin la retro, mercredi après-midi on débute le Sprint Planning, que l'on finirait le jeudi
+    ** se base sur le Sprint Backlog
+    ** durée max d'un Sprint : 1 mois calendaire
+    ** si risque très élevé, on fait des Sprint plus courts
+    ** il est préférable de conserver la même durée pour les sprints
+    ** *PAS de sprint 0* (forbidden Scrum.org)
+    ** si l'équipe de dev est en retard ou en avance, c'est *le PO qui peut ajouter / supprimer des items*
+    ** l'équipe de dev (avec le soutien du Scrum Master) doit prévoir :
+        *** préparation de la review : doit être faite par l'ensemble de l'équipe
+        *** refactoring
+    ** aucun sprint "particulier" dans Scrum (in integration, hardening ou autre)
+
+* *Sprint 0* (qui est forbidden selon Scrum.org)
+    ** vient de l'expérience
+    ** peut avoir une durée plus longue que les autres Sprints
+    ** un sprint initial de préparation (réalisation de maquettes, définition du socle technique, etc.)
+        *** il y a plus d'interventions des parties prenantes (comme les architectes)
+    ** PX Timothée : il n'est pas trop pour, car on va y faire beaucoup de choses là où l'équipe en connaît le moins
+
+* *Sprint planning*
+    ** *What and How ?*
+    ** définir ce qui peut être réalisé
+    ** *définir le Sprint Goal* : vision macroscopique, pour le sprint
+        *** défini à la fin du Spring planning, après la définition du Sprint Backlog
+    ** *définir le Sprint Backlog* : vision microscopique, au jour le jour
+    ** qu'est-ce qu'on fait et comment on le fait ?
+    ** dure 8h pour un Sprint de 4 semaines
+    ** RX Timothée : déléguer la gestion de la timebox à un membre de l'équipe de dev (le "maître du temps")
+    ** le Sprint Backlog évolue tout au long DU SPRINT
+        *** Durant le Spring Planning tout le découpage en task n'a pas forcément été fait
+    ** personnes présentes :
+        *** Scrum Master
+        *** *Product Owner* : c'est la réunion où il est le plus important
+        *** l'équipe de développement
+            **** qui va devoir estimer la taille des items
+    ** 1) c'est le PO qui arrive avec une liste d'items dans le product backlog (la parole est au PO)
+    ** 2) Débat (explication ensemble des items), découpe et estimations des items par l'équipe de dev (c'est là où on peut sortir le *Poker Planning*)
+        *** l'estimation doit surtout être *comparative* : on estime les items les uns par rapport aux autres (on ne sort pas "cash" les j/h)
+        *** une fois l'estimation faite, *on découpe l'items en tâches*
+        *** on a donc ici la définition de notre Sprint backlog
+    ** 3) et là, on peut définir le Sprint Goal
+
+* *Sprint Review*
+    ** 4 heures pour un sprint de 4 semaines (souvent plus de 2 heuresr pour un sprint de 2 semaines)
+    ** se concentre sur le produit
+    ** *phase d'inspection* de l'itération
+    ** 5 objectifs :
+        *** engagement de l'équipe
+        *** faire un constat de ce qui s'est bien ou mal passé : en termes de technique et de fonctionnalités
+        *** Point sur le *budget* par le PO et les parties prenantes
+        *** prise en compte des contraintes externes : évolutions de la technologie, etc.
+    ** participants :
+        *** Scrum Master : garant de la tenue de l'evt et de la timebox
+        *** PO : garant du "où est-ce qu'on en est actuellement"
+        *** équipe de dev : va répondre à toutes les questions sur le produit
+        *** Les parties prenantes : la seule cérémonie où elles sont présentes
+            **** Par contre, il est très souvent CONTRE-PRODUCTIF que toutes les parties prenantes soient présentes
+    ** c'est la cérémonie qui *évite l'effet tunnel*
+    ** et qui *va valider le reste à faire*
+
+* *Sprint Retro*
+    ** 3 heures pour un sprint de 4 semaines
+    ** se concentre sur l'équipe :
+        *** *relationnel et humain*
+        *** *processus de réalisation du produit*
+    ** doit mettre en place un plan d'actions
+        *** objectif SMART pour le plan d'action: Specific / Measurable / Achievable / Relevant / Timeboxed +
+        "In order to <reach a goal (AR)> we will <do an action (S)> before <a point in time (T)>. We know that we were successful when <measure a result (M)>"
+        *** le plan d'actions doit être *ambitieux* MAIS *réaliste*
+    ** participants :
+        *** Scrum Master : la cérémonie où il est le plus important
+        *** PO : pour les axes d'amélioration globaux de l'équipe
+        *** équipe de dev
+    ** outils intéressants :
+        *** weather report
+    ** RX Timothée : 
+        *** commencer la retro par un "ice breaker"
+        *** tirer aux NERF sur les gens qui parlent trop...
+
+* *Daily Meeting*
+    ** 15 minutes MAX, quel que soit la taille de l'équipe ou du Sprint
+    ** doit se dérouler à la même heure, dans le même lieu pour faciliter l'organisation de l'évènement
+        *** The Daily Scrum is held at the same time and place each day to reduce complexity.
+    ** the Development Team is responsible for conducting the Daily Scrum
+    ** *3 questions* :
+        *** Qu'ai-je terminé depuis hier ? JUSTE L'EVOQUER !
+        *** que terminerai-je aujourd'hui ?
+        *** Est-ce que je rencontre des problèmes ? Ai-je besoin d'aide ? *LE PLUS IMPORTANT !*
+            **** et on ne parle PAS des problèmes rencontrés la veille
+    ** RX Timothée : Daily en 2 parties
+        *** 15 min de "factuel" : "j'ai déplacé ma story de in progress à Done"
+        *** 5 à 10 min (NON timeboxé) sur le ressenti
+        *** ne PAS la faire le matin en arrivant
+    ** Acteurs :
+        *** seule l'équipe de dev peut y PARTICIPER, mais tout le monde peut y ASSISTER (cad ne PAS parler)
+        *** sur la demande de l'équipe de dev, le Scrum Master peut y PARTICIPER (dans la pratique, il est toujours là...)
+    ** Objectifs :
+        *** planifier et rythmer les développements : quand des tâches sont liées
+        *** libérer la communication et renforcer l'esprit d'équipe
+        *** garder le cap et rectifier en cas de dérive
+        *** anticiper les problématiques : on attend pas la retro pour remonter les problèmes, le daily est la bonne occasion pour en parler 
+
+* *le backlog Grooming*
+    ** pas évoqué dans le Scrum Guide
+    ** RX Timothée : 1 heure à 1h30 par semaine serait pas mal
+    ** objectifs : 
+        *** redécouper et/ou ré-estimer certains éléments
+        *** supprimer les éléments obsolètes
+    ** Redécouper et ré-estimer les éléments les plus prioritaires, les plus gros
+
+== A retenir
+
+* "ATTEND" = watch qui est DIFFERENT de "PARTICIPATE" = talk
+* to assess = évaluer / apprécier
+
+* Certification :  80 questions en 60 minutes, et 85% requis
+
+* la durée des cérémonies
+* les rôles dans l'équipe
+
+* n'importe qui peut ASSISTER ("attend") au Daily Scrum, MAIS en se taisant
+* Seule l'équipe de dev PARTICIPE ("participate") au Daily Scrum, et peut choisir d'inviter le Scrum Master à PARTICIPER également
+
+* Le PO manage les products, et le Scrum Master manage les process méthodologiques
+
+* *Items ~ User Story*, donc le découpage en Items est à faire par le PO
+    ** par contre le découpage EN TASK est fait par l'équipe de développement
+    ** User Story est un concept venant de l'eXtrem Programming
+    ** un Item PEUT être une User Story (mais ce n'est pas obligé)
+* Un Item est un élément du backlog
+    ** *Une User Story est une FORME d'Item* (le terme "User Story" vient de l'XP)
+
+* Pas de Proxy Product Owner (PPO) dans le Scrum Guide -> FORBIDDEN
+
+* Scrum.org : il ne peut PAS y avoir de "sprint 0", car il n'apporte aucune valeur ajoutée
+
+* RX Timothée, sa DoD :
+    ** Tests
+    ** Doc
+    ** façon de présenter la story à une review
+
+* même si déconseillé, *une même personne peut cumuler plusieurs rôles*
+    ** donc un Scrum Master peut également être PO (même si déconseillé), ou un membre de l'équipe de dev peut être PO
+
+* Dans la certif, il y aura des questions sur des choses *Obligatoires* (MANDATORY), *Autorisées* (ALLOWED) et *Interdites* (FORBIDDEN)
+    ** "Sprint 0" -> FORBIDDEN +
+    Scrum.org : il ne peut PAS y avoir de "sprint 0", car il n'apporte aucune valeur ajoutée
+
+* Scrum.org : Si un même produit ET plusieurs équipes, il ne peut y avoir qu'*UN SEUL Product Backlog*
+
+* Scrum.org : il n'y a PAS de grooming / Sprint Backlog refinement (FORBIDDEN ?)
+
+* RX : charte de qualité du code définie avec l'équipe de dev dès le début du projet (démarche crafter)
+
+* "Value estimate" = estimation de la VALEUR -> responsabilité du PO
+* "Estimate" tout court : l'estimation du poker planning, donnée par l'équipe de dev
+
+* la notion d'Epics n'est PAS dans Scrum.org, apparemment il n'y a pas de question dessus
+
+* le PO et le Scrum Master PEUVENT faire partie de l'équipe de dev
+
+* le *Sprint de "consolidation"* (hardening sprints) est un FORBIDDEN côté Scrum.org, MAIS a beacoup de sens sans la "vraie" vie. +
+*Hardening Sprint* = sprint où l'on fait peu d'US fonctionnelles, mais *beaucoup plus de techniques*, pour réduire la dette technique
+    ** dans tous les cas, il est bon de garder un minimum de US fonctionnelles, pour montrer aux parties prenantes qu'on continue à livrer "de la valeur" (telle qu'elles l'entendent)
+
+* Pour Scrum.org, *il faut prendre TOUT le framework* ET ne pas changer sa terminologie : la Scrum Team ne peut pas choisir (pour Scrum.org !) de ne pas prendre une cérémonie par exemple
+
+* *Release Planning* ~ story mapping -> pas obligatoire mais pas interdit
+
+* pour Scrum.org : *formal* meeting implique *échange de signatures*, et il n'y en a PAS dans SCRUM
+
+* "business" = PO !
+
+* "ready" ~ complete
+
+* Jamais de "baseline" dans Scrum.org
+
+* "project" = "product" pour Scrum.org
+
+== Questions
+
+* Qu'en est-il de la doc en SCRUM ?
+    ** pas dans Scrum.org, mais essentielle. Elle n'est pas complète en début de projet, mais doit le devenir à la fin de celui-ci.
+
+* quand détailler une story, et l'estimer ? (Grooming ?)
+    ** RX Timothée : dans le Sprint Planning ET dans le grooming (RX Timothée, prévoir 1h à 1h30 / semaine pour le grooming)
+
+* Sprints techniques quand dette technique, comment les présenter ?
+    ** RX Timothée : pas de Sprint total de consolidation, mais un sprint plus léger OUI !
+    ** jeu du lego ? acheter un petit lego, et demander "je te donne 2 min, à ton avis tu peux arriver jusqu'à quelle phase de la notice ? la 8 ? Alors essaye d'aller jusqu'à la 12 ?" +
+    Après, on lui demande de continuer sur la base des bêtises faites précédemment en allant trop vite -> c'est "ça", la dette technique
+
+* combien d'éléments du product backlog faut-il détailler avant / pour un sprint planning ? (quand avoir les items "ready" ?)
+    ** tentative de roadmap sur les 2 ou 3 sprints à l'avance par le PO +
+    Il semblerait plus utile de raisonner ici en termes de "sprints à l'avance" plutôt que "d'items à l'avance"
+    ** d'où l'importance d'une bonne définition de Ready pour savoir ce qu'on peut prendre
+    ** si on arrive pas à avoir le PO de dispo, qui arrive avec une bonne liste d'items en Sprint Planning, on peut élire un membre de l'équipe de dev comme PPO, pour compenser le manque
+    ** dans le cas d'un PO pas assez dispo, c'est le job du Scrum Master d'aller le coacher
+
+* Conseil de Timothée : PSM 1 OK, mais les 2 et 3 ne sont pas vraiment nécessaires
+
+== Examens blancs sur Scrum.org
+
+* noter sur papier les questions sur lesquelles on a un doute
+* bien relire les questions jusqu'à la fin des 1 heure
+
+=== Examen blanc -> 30 questions en 30 minutes (86.7%)
+
+30 questions en 30 min
+
+* What is a proper role of a POM in a company that uses Scrum ?
+    ** Manages portfolios and programs and facilitates the application of techniques that complement Scrum
+
+* Who measures the performance of the Sprints ?
+    ** the Development Team
+
+* How often should the composition of the team change? 
+    ** As needed, considering that it will have a short-term reduction in productivity
+
+* What are the two primary ways a Scrum Master keeps a Development Team working at its highest level of productivity?
+    ** By facilitating Development Team decisions
+    ** By removing impediments that hinder the Development Team
+
+* When many Development Teams are working on a single product, what best describes the definition of "Done?"
+    ** All Development Teams must have a definition of "Done" that makes their combined work potentially releasable.
+
+* Which statement best describes a Product Owner's responsibility?
+    ** Optimizing the value of the work the Development Team does.
+
+* An organization has decided to adopt Scrum, but management wants to change the terminology to fit with terminology already used. What will likely happen if this is done?
+    ** ELLE EST BIZARRE
+    ** Without a new vocabulary as a reminder of the change, very little change may actually happen.
+    ** The organization may not understand what has changed with Scrum and the benefits of Scrum may be lost.
+    ** Management may feel less anxious ?????? Cette réponse est peut-être fausse
+
+* The length of a Sprint should be: ALL NEXT 3 ANSWERS
+    ** Short enough to keep the business risk acceptable to the Product Owner.
+    ** Short enough to be able to synchronize the development work with other business events.
+    ** No more than one month.
+
+* Who should know the most about the progress toward a business objective or a release, and be able to explain the alternatives most clearly?
+    ** The Product Owner
+
+* Who creates the definition of "Done"?
+    ** The development organization (or Development Team if none is available from the development organization)
++
+----
+If the definition of "done" is part of the conventions, standards or guidelines of the development organization, all Scrum Teams must follow it as a minimum. The Development Team of the Scrum Team can complement it with elements specific for the product or context.
+If "done" for an increment is not a convention of the development organization, the Development Team of the Scrum Team must define a definition of "done" appropriate for the product.
+----
+
+* Who is responsible for managing the progress of work during a Sprint?
+    ** The Development Team
+
+* The Product Backlog is ordered by:
+    ** Whatever is deemed most appropriate by the Product Owner.
+
+=== 2nd examen blanc avec Timothée
+
+* The development team is ready to start the first Spring, but the Product Backlog is not ready yet. What should the Product Owner do?
+    ** Let the team start the first Spring, and continue refining the Product Backlog
+
+* Which statement is correct about the Sprint Backlog
+    ** it has just enough detail
+
+* Which element is NOT an attribute of Product Backlog items?
+    ** Owner
+
+* What does it mean for a Development Team to be cross-functional?
+    ** They have all the expertise required for the product, in such a way that they do not need any help from the outside
+
+* the Definition of Done can change during the project
+    ** True
+
+* The purpose of each Sprint it to release a piece of working software
+    ** FALSE
+    ** The purpose is to create a potentially RELEASABLE piece of software. It doesn't have to be releasED.
+
+* When should we release the product?
+    ** when it makes sense
+
+* The product Backlog is baselined before the first Sprint
+    ** FALSE
+    ** "baseline" has a specific meaning in project managment that may apply to some elements in Scrum. However, Scrum.org interperts is as keeping the subject fixed, and therefore, believes that there are no baseline in Scrum.
+
+* How is budgeting done in Scrum?
+    ** ideally revised each Sprint to ensure value is being delivered
+
+* What does a burn-down chart measure?
+    ** work remaining across time
+
+* A company that is mature in using Scrum, and it also has a PMO. What is the role of the PMO?
+    ** manages portfolios and programs and facilitates the applications of techniques that complement Scrum.
+
+* Which of the following is a benefit of self-organization?
+    ** Increased creativity
+    ** when people are self-organized, meaning that they make their own decisions instead of receiving orders, they take the decision-making process moe seriously (increased creativity) and will be more committed to the decision (increased buy-in)
+
+* Which of the following is NOT correct about the Product Owner role?
+    ** is the only person who can add items to the Product Backlog
+    ** The PO may decide to allow developers to add items to the Product Backlog under the supervision of the Product Owner. Regardless of the responsibility, the PO stays accountable for this.
+
+* Which of the following is the LEAST productive way for the Scrum Master to improve the Development Team's communications with the product Owner
+    ** Act as a go-between for them
+
+* The Sprint Backlog makes visible all the work that the _____ identifies as necessary to meet the Sprint Goal
+    ** Development Team
+
+* Which statement is NOT correct about Daily Scrums?
+    ** it's facilitated by the Scrum Master
+
+* Which two of the following can be considered real outputs of a Sprint?
+    ** a few Done features that are added to the previous version of the software
+    ** a potentially releasable piece of software
+
+== 3rd examen blanc sur Scrum.org (100%)
+
+== 4e examen blanc (90%)
+
+* Which statement best describes the Sprint Review?
+    ** It is when the Scrum Team and stakeholders *inspect* the outcome of a Sprint and figure out what to do next.
+
+* What is the role of Management in Scrum?
+    ** Support the Product Owner with insights and information into high value product and system capabilities. Support the Scrum Master to cause organizational change that fosters empiricism, self-organization, bottom-up intelligence, and intelligent release of software.
+
+* Why is the Daily Scrum held at the same time and same place?
+    ** The consistency reduces complexity.
+
+* Which statement best describes the Sprint Review?
+    ** It is when the Scrum Team and stakeholders inspect the outcome of a Sprint and figure out what to do next.
+
+* What are the two primary ways a Scrum Master keeps a Development Team working at its highest level of productivity?
+    ** By removing impediments that hinder the Development Team
+    ** By facilitating Development Team decisions
+
+* When might a Sprint be abnormally cancelled?
+    ** When the Sprint Goal becomes obsolete.
+-> la question veut en fait dire "quand un Sprint peut-il être annulé, même si normalement, on ne devrait pas le faire"
++
+.Explication officielle
+----
+Feedback
+A Sprint can be cancelled before the Sprint time-box is over. A Sprint would be cancelled if the Sprint Goal becomes obsolete. This might occur if the company changes direction or if market or technology conditions change.
+----
+
+* The Scrum Team should choose at least one high priority process improvement, identified during the Sprint Retrospective, and place it in the Product Backlog.
+    ** false
++
+.Explication officielle
+----
+Feedback
+False, to ensure continuous improvement, the Sprint Backlog rather than the Product Backlog includes at least one high priority process improvement identified in the previous Sprint Retrospective meeting.
+----
+
+* Which of the following services are appropriate for a Scrum Master in regard to the Daily Scrum?
+    ** Teach the Development Team to keep the Daily Scrum within the 15 minute time-box.
++
+.Explication officielle
+----
+Feedback
+The Scrum Master ensures that the Development Team has the meeting, but the Development Team is responsible for conducting the Daily Scrum. The Scrum Master teaches the Development Team to keep the Daily Scrum within the 15-minute time-box. The Scrum Master enforces the rule that only Development Team members participate in the Daily Scrum.
+----
+
+=== Nouvel examen blanc (100%)
+
+=== PO exam (93.3%)
+
+* 2 - Learning turns into 'validated learning' when assumptions and goals can be assessed through results. What is a key way for a Product Owner to apply validated learning?
+    ** Set the Sprint Goal before selecting Product Backlog items at Sprint Planning to learn about a Development Team's productivity.
+    ** me semble bizarre
+* 8 - 
+* 14 - When can the Product Backlog be updated?
+
+* What two things best help the Product Owner manage the value of a product?
+    ** The order of the Product Backlog
+    ** Validating assumptions of value through frequent releases
+
+* Learning turns into 'validated learning' when assumptions and goals can be assessed through results. What is a key way for a Product Owner to apply validated learning?
+    ** Release an Increment to the market to learn about the business assumptions built into the product.
++
+.Feedback
+----
+The Product Owner manages Product Backlog against the assumption that value will be generated. This assumption remains invalidated when not checked against users and market.
+----
+
+* The process of regular inspection and adaptation employs knowledgeable and skilled inspectors. What are two ways in which the Product Owner takes the lead in the inspection process?
+    ** At the Sprint Review the Product Owner shares the current state of Product Backlog, which, combined with the inspection of the Increment, leads to an updated Product Backlog.
+    ** The Product Owner invites stakeholders to the Sprint Review to learn how the current state of the marketplace influences what is the most valuable thing to do next.
+
+* What two phrases best describe the relationship of the Product Owner and the Development Team?
+    ** They collaborate often so the Development Team builds Increments keeping end-user and stakeholder concerns in mind.
+    ** They collaborate often so the Product Owner can make informed decisions in balancing effort and value of Product Backlog items.
++
+.Feedback
+----
+The Product owner clearly expresses Product Backlog items, ensuring the Development Team understands items in the Product Backlog to the level needed for developing them and creating the value the Product Owner envisions. Scope may be re-negotiated if the effort grows much higher than anticipated.
+----
+
+* How can a Product Owner use time-boxed Sprints to obtain feedback from users and the market?
+    ** Through frequent delivery of Increments of the product into the market.
++
+.Feedback
+----
+The Product Owner manages Product Backlog against the assumption that value will be generated. This assumption remains invalidated when not checked against users and market. When a Sprint's horizon is too long, you increase the risk that what is being developed may no longer be desired. Sprints limit risk to one calendar month or less of work.
+----
+
+* A first Sprint can start before the Product Owner has a complete and exhaustive Product Backlog in place.
+    ** True
++
+.Feedback
+----
+A first Sprint requires no more than a Product Owner, a team, and enough ideas to potentially complete a full Sprint.
+----
+
+* In order to make investment decisions, the Product Owner is likely to look at the Total Cost of Ownership (TCO) of the product being built.  What costs will a Product Owner take into account?
+    ** All investments required to conceive, develop, operate and maintain the product
++
+----
+The owner of a product is not only accountable for development and release of a product, but also the cost of maintaining and operating the product. If a person 'owns' the product, he/she can be expected to be responsible for the complete lifecycle of a product.
+----
+
+* The value delivered by a product can only be determined by revenue.
+    ** false
++
+----
+Value is likely to vary across products and organizations.
+----
+
+* Must the Product Owner be present at the Sprint Retrospective?
+    ** It is mandatory. The Sprint Retrospective is an opportunity for the Scrum Team to assess its performance and improve itself.
++
+----
+The Sprint Retrospective is an opportunity for the Scrum Team to inspect itself and create a plan for improvements to be enacted during the next Sprint.
+----
+
+* What two things should be done if the Product Owner is unavailable?
+    ** Within the Sprint, the Development Team makes the best decisions possible to assure progress toward the Sprint Goal, re-aligning with the Product Owner once he/she is available again.
+    ** In a permanent state of unavailability, a new Product Owner needs to be appointed. Development efforts without a Product Owner are not employing Scrum.
++
+----
+The Scrum framework consists of Scrum Teams and their associated roles, events, artifacts, and rules. Each component within the framework serves a specific purpose and is essential to Scrum's success and usage. The Scrum Team consists of a Product Owner, the Development Team, and a Scrum Master. The Product Owner is responsible for maximizing the value of the product and the work of the Development Team. In the absence of a Product Owner, the latter accountability is not performed.
+----
+
+=== Nouvel examen blanc (100%)
+
+* Development Team membership should change:
+    ** As needed, while taking into account a short term reduction in productivity.
+
+* The Development Team should not be interrupted during the Sprint. The Sprint Goal should remain intact. These are conditions that foster creativity, quality and productivity. 
+    ** TRUE : The Development Team may work with the Product Owner to remove or add work if it finds it has more or less capacity than it expected.
+    ** TRUE : As a decomposition of the selected Product Backlog Items, the Sprint Backlog changes and may grow as the work emerges.
+    ** TRUE : The Product Owner can help clarify or optimize the Sprint when asked by the Development Team.
+    ** FALSE : The Sprint Backlog is fully formulated in the Sprint Planning meeting and does not change during the Sprint.
++
+.Feedback
+----
+The Sprint Backlog makes visible all of the work that the Development Team identifies as necessary to meet the Sprint Goal. The Development Team modifies the Sprint Backlog throughout the Sprint, and the Sprint Backlog emerges during the Sprint.
+----
+
+* The Development Team should have all the skills needed to:
+    ** Turn the Product Backlog items it selects into an increment of potentially releasable product functionality.
++
+.Feedback
+----
+The Development Team consists of professionals who do the work of delivering a potentially releasable Increment of "Done" product at the end of each Sprint. Development Teams are cross-functional, with all of the skills as a team necessary to create a product Increment.
+----
+
+=== Nouveau PO exam (100%)
+
+* What is a Product Backlog?
+    ** It is a living artifact of product requirements that exists and evolves as long as a product exists.
++
+.Feedback
+----
+The Product Backlog is an ordered list of everything that might be needed in the product and is the single source of requirements for any changes to be made to the product. The Product Backlog evolves as the product and the environment in which it will be used evolves. Higher ordered Product Backlog items are usually clearer and more detailed than lower ordered ones. As long as a product exists, its Product Backlog also exists.
+----
+
+* What best describes the relationship of the Product Owner and the stakeholders?
+    ** The Product Owner actively asks for stakeholder input and expectations to process into the Product Backlog.
++
+.Feedback
+----
+The Product Owner represents the stakeholders to the Scrum Team, which includes representing their desired requirements in the Product Backlog. The Product Owner has the final call over the Product Backlog.
+----
+
+* What variables should a Product Owner consider when ordering the Product Backlog?
+    ** Whatever is most appropriate for the Product Owner to achieve the product's goals and to optimize the value received
++
+.Feedback
+----
+The Product Owner is responsible for ordering the items in the Product Backlog to best achieve goals and missions, thereby optimizing the value of the work the Development Team performs. How this is done, and what value means, may vary widely across organizations.
+----
+
+* What is the Product Owner accountable for in Scrum?
+    ** Clearly expressing a Product Backlog that maximizes value and represents the needs of the stakeholders
++
+.Feedback
+----
+The Product Owner is responsible for maximizing the value of the product and the work of the Development Team. The primary tool to do so is the Product Backlog.
+----
+
+* The Product Owner's authority to change and update the Product Backlog is unlimited, except for:
+    ** Nothing. The entire organization must respect a Product Owner's decisions.
++
+.Feedback
+----
+For the Product Owner to succeed, the entire organization must respect his or her decisions. No one is allowed to tell the Development Team to work from a different set of requirements, and the Development Team isn't allowed to act on what anyone else says.
+----
+
+* What pre-conditions must be fulfilled in order to allow Sprint Planning to begin?
+    ** There are no such pre-conditions
++
+.Feedback
+----
+Sprint Planning serves to plan the work to be performed in the Sprint. This plan is created by the collaborative work of the entire Scrum Team. Sprint Planning is time-boxed to a maximum of eight hours for a one-month Sprint. What can be achieved in this time-box may be influenced by additional practices that are however not prescribed by Scrum.
+----
+
+* To what extent does technical debt limit the value a Product Owner can get from a product? 
+    ** The velocity at which new functionality can be created is reduced when you have technical debt.
+    ** Technical debt causes a greater percentage of the product's budget to be spent on maintenance of the product.
+
+=== VERITABLE EXAMEN
+
+-> réussi le 03/07/2020 : 98.8%
+
+== Questions sur la formation
+
+* An organization has decided to adopt Scrum, but management wants to change the terminology to fit with terminology already used. What will likely happen if this is done?
+    * une des bonnes réponses données est "Management may feel less anxious." ce qui semble faux. Timothée a posé la question à Scrum.org, on attend la réponse
+
+== RX de Timothée
+
+** Burn-down chart pour le SPRINT, et Burn-up chart pour le PROJET tout entier (car on ne sait jamais ce qu'il reste à faire pour le projet lui-même, étant donné que les choses peuvent évoluer)
+** Jeter un oeil à la certification de Product Owner
+
+
+
+
